@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  nodeapp: 
+    build: 
+      context: ./nodeapp
+      dockerfile: Dockerfile
+    image: anap7/hello-express
+    container_name: app_node_show
+    ports:
+      - "3000:3000"
